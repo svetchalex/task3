@@ -13,7 +13,7 @@ function changeTable($a)
        (null, 'Семья', $a ),
        (null, 'Знакомые', $a ),
        (null, 'Друзья',  $a ),
-       (null, 'Сотрудники',$a ),
+       (null, 'Сотрудники',$a )
       
        
 SQL;
