@@ -8,7 +8,7 @@ function changeTable($a)
 
 
     $sql1 = <<<SQL
-       INSERT INTO contacts (id, name, telephone, id_client) VALUES
+       INSERT INTO groups (id, name, id_client) VALUES
        (null, 'Часто используемые',  $a ),
        (null, 'Семья', $a ),
        (null, 'Знакомые', $a ),
