@@ -1,12 +1,12 @@
 <?php
 /**
  * 3. База контактов
- * Для базы контактов создадим 5 таблиц.
- * 1) Таблица клиентов
- * 2) Таблица контактов
- * 3) Таблица групп
- * 4) Таблица отношений контактов и групп
- * 5) Таблица каналов рассылок
+ * Для базы контактов создадим 5 таблиц:
+ * 1) Таблица клиентов - client
+ * 2) Таблица контактов - contacts
+ * 3) Таблица групп - group
+ * 4) Таблица отношений контактов и групп contactgroup
+ * 5) Таблица каналов рассылок - channels
  */
 
 $sql1 = <<<SQL
@@ -48,12 +48,12 @@ SQL;
 $sql5 = <<<SQL
 CREATE TABLE channels (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  id_contact INT NOT NULL,
+  id_client INT NOT NULL,
   email VARCHAR(128),
   whatsapp VARCHAR(128),
   viber VARCHAR(128),
   telegram VARCHAR (128),
-  FOREIGN KEY (id_contact) REFERENCES contacts (id)
+  FOREIGN KEY (id_client) REFERENCES client (id)
 )
 SQL;
 
