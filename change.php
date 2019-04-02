@@ -1,13 +1,8 @@
 <?php
 function changeTable()
 {
-    $mysqli = new mysqli('localhost', 'stud03', 'password', 'database');
-    if (!mysqli_set_charset($mysqli, "utf8")) {
-    printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($mysqli));
-    exit();
-} else {
-    printf("Текущий набор символов: %s\n", mysqli_character_set_name($mysqli));
-}
+    $mysqli = new mysqli('localhost', 'stud03', 'password', 'contacts');
+
 
 
 
@@ -39,7 +34,7 @@ SQL;
 }
 
 function change(){
-    for($i=0; $i<100000;$i++){
+    for($i=0; $i<1000000;$i++){
         changeTable();
     }
 }
