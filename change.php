@@ -11,7 +11,7 @@ function changeTable()
 
 
 
-    $a = rand(1,1000)
+    $a = rand(1,1000);
     $sql1 = <<<SQL
        INSERT INTO contacts (id, name, telephone, id_client) VALUES
        (null, 'Яхлаков Лукьян Валериевич', '74953478043', $a ),
