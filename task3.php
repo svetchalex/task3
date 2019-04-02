@@ -138,7 +138,7 @@ SQL;
 $sql17 = <<<SQL
 SELECT name, telephone FROM contacts WHERE telephone = '79788261754'
 SQL;
-/** MySQL считает нужным проанализировать для выполнения запроса 138996 строк, проиндексируем столбец telephone
+/** MySQL считает нужным проанализировать для выполнения запроса 992256 строк, проиндексируем столбец telephone
 /  таблицы contacts
 */
 $sql18 = <<<SQL
